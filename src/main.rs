@@ -137,7 +137,6 @@ pub fn move_players(
                 return;
             };
             let amount = dual_axis.xy() * linear_speed.0 * delta_time;
-            println!("amount: {:?}", amount);
             impulse.apply_impulse(amount.extend(0.0));
         }
     });
