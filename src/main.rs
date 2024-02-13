@@ -124,7 +124,7 @@ fn setup(
 #[derive(Component, Debug, Deref, DerefMut, Reflect)]
 pub struct LinearSpeed(pub f32);
 
-/// Applies external impulses to [`Hovering`] players.
+/// Applies external impulses to players.
 pub fn move_players(
     mut query: Query<(&PlayerController, &LinearSpeed, &mut ExternalImpulse)>,
     time: Res<Time>
